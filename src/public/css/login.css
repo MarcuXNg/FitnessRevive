@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+.login {
+    background-color: #fff;
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+a { 
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.password-container {
+    position: relative;
+}
+
+.fa-eye, .fa-eye-slash {
+    position: absolute;
+    top: 28%;
+    right: 4%;
+    cursor: pointer;
+    color: lightgray;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 450px;
+    /*size của input box*/
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+::placeholder {
+    font-size: 16px; /* Set the desired font size */
+}
+
+input[type="submit"] {
+    background-color: #1877f2;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #1852f2;
+}
