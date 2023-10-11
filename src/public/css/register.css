@@ -39,6 +39,7 @@ a:hover {
 }
 
 input[type="text"],
+input[type="email"],
 input[type="password"] {
     width: 450px;
     /*size của input box*/
@@ -52,7 +53,7 @@ input[type="password"] {
     font-size: 16px; /* Set the desired font size */
 }
 
-p a {
+input[type="submit"]{
     background-color: #1877f2;
     color: #fff;
     padding: 10px 15px;
@@ -61,7 +62,7 @@ p a {
     cursor: pointer;
 }
 
-p a:hover {
+input[type="submit"]:hover {
     background-color: #1852f2;
     text-decoration: none;
 }

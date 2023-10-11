@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <link rel="stylesheet" type="text/css" href="css/login.css" media='screen'>
+    <link rel="stylesheet" type="text/css" href="css/register.css" media='screen'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
     <title>Login</title>
@@ -17,42 +17,45 @@
               <div class="menubutton">
                 <h1 onclick="menuToggle('hide')" class="menubutton">&#9776;</h1> -->
         <div>
-            <h1>Login</h1>
+            <h1>Register</h1>
         </div>
         <div>
-            <form class='login' action="#" method="post">
+            <form class='login'>
                 <div>
                     <div>
                         <input type="text" name="username" id="username" placeholder='Username' autofocus="1">
+                    </div>
+                    <div>
+                        <input type="email" name="email" id="email" placeholder='Email' autofocus="1">
                     </div>
                     <div class="password-container">
                         <input type="password" name="password" id="password" placeholder='Password' autofocus="1">
                         <a href="#" role="button"></a>
                         <i class="fa-solid fa-eye" id="show-password"></i>
                     </div>
-                    <p><a href="/">
-                        Log in
-                    </p></a>
+                    <div class="password-container">
+                        <input type="password" name="Confirmpassword" id="Confirmpassword" placeholder='Confirm Password' autofocus="1">
+                        <a href="#" role="button"></a>
+                        <!-- <i class="fa-solid fa-eye" id="show-password"></i> -->
+                    </div>
+                    <p>
+                        <input type="submit" value="Log in">
+                    </p>
                     <div>
-                        <a href="/login/passwordrecovery">Forgotten password?</a>
+                        <a href="">Forgotten password?</a>
                     </div>
 
                 </div>
-                <form>
-                    <p><a href="/register">
-                        Create a new account     
-                    </p></a>
+                <form id="movetoRegister">
+                    <p>
+                        <input type="submit" value="Create a new account">
+                    </p>
                 </form>
             </form>
         </div>
     </div>
     <!-- Toggle Password Function -->
     <script src="js/showpassword.js"></script>
-    <script>
-        document.getElementById("createAccountButton").addEventListener("click", function() {
-            window.location.href = "./register";
-        });
-    </script>
 </body>
 
 </html>

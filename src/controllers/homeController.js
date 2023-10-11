@@ -14,6 +14,9 @@ const getLogin = (req, res) => {
     res.status(200).render(path.resolve('./src/views/login', 'login.ejs')); //render login.ejs in views/login
 }
 
+const getRegister = (req, res) => {
+    res.status(200).render(path.resolve('./src/views/register', 'index.ejs')); // render index.ejs in views/register
+}
 const get404 = (req, res) => {
     res.status(404).render(path.resolve('./src/views/404', '404.ejs')); //render 404.ejs in views/404
 }
@@ -23,4 +26,5 @@ module.exports = {
     getAbout,
     getLogin,
     get404,
+    getRegister,
 }
