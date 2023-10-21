@@ -5,7 +5,7 @@
 }
 
 
-.header-section {
+/* .header-section {
     position: absolute;
     left: 0;
     top: 0;
@@ -13,18 +13,9 @@
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: black;
-}
-/* 
-.header-section {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    padding: 0 15px;
-    padding-top: 55px;
-    z-index: 99;
+    background-color: yellow;
 } */
+
 
 /* .nav-menu {
     text-align: center;
