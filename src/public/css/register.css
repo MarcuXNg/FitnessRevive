@@ -20,6 +20,7 @@ h2 {
 
 a { 
     text-decoration: none;
+    color: blue;
 }
 
 a:hover {
@@ -53,7 +54,7 @@ input[type="password"] {
     font-size: 16px; /* Set the desired font size */
 }
 
-p a{
+.register-button a{
     background-color: #1877f2;
     color: #fff;
     padding: 10px 15px;
@@ -62,7 +63,8 @@ p a{
     cursor: pointer;
 }
 
-p a:hover {
+.register-button a:hover {
     background-color: #1852f2;
     text-decoration: none;
 }
+
