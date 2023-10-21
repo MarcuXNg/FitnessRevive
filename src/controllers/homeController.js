@@ -11,7 +11,7 @@ const getAbout = (req, res) => {
 };
 
 const getLogin = (req, res) => {
-  res.status(200).render(path.resolve('./src/views/login', 'login.ejs')); // render login.ejs in views/login
+  res.status(200).render(path.resolve('./src/views/login', 'index.ejs')); // render login.ejs in views/login
 };
 
 const getRegister = (req, res) => {
