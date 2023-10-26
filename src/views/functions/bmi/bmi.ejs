@@ -24,32 +24,32 @@
                 <div class="row px-3 align-items-center">
                     <div class="col-md-6">
                         <div class="pr-md-3 d-none d-md-block">
-                            <h4 class="text-primary">Body Mass Index </h4>
+                            <h4 id="heading4" class="text-primary">Body Mass Index </h4>
                             <h4 class="display-4 text-black font-weight-bold mb-4">What is BMI?</h4>
-                            <p class="m-0 text-black">The body mass index (BMI) is a measure that uses your height and weight to work out if your weight is healthy. The BMI calculation divides an adult's weight in kilograms by their height in metres squared.</p>
+                            <p class="m-0 text-black">The body mass index (BMI) is a measure that uses your height and weight to work out </p>
+                            <p class="m-0 text-black">if your weight is healthy. The BMI calculation divides an adult's weight in kilograms by their height in metres squared.</p>
                         </div>
                     </div>
-                    <div class="col-md-6 bg-secondary py-5">
+                    <div class="col-md-6 bg-secondary py-5 rounded-3">
                         <div class="py-5 px-3">
                             <h1 class="mb-4 text-white">Calculate your BMI</h1>
                             <form>
                                 <div class="form-row">
-                                    <div class="col form-group">
-                                        <input type="text" class="form-control form-control-lg bg-dark text-white"
-                                            placeholder="Weight (KG)">
+                                    <div id="myDiv" class="col form-group my-2">
+                                        <input id="weight" type="number" class="form-control custom-placeholder form-control-lg bg-dark text-white" placeholder="Weight (KG)">
+                                        <p id="weightNoti">Please enter your weight.</p>
                                     </div>
-                                    <div class="col form-group">
-                                        <input type="text" class="form-control form-control-lg bg-dark text-white"
-                                            placeholder="Height (CM)">
+                                    <div id="heightNoInput" class="col form-group my-2">
+                                        <input id="height" type="number" class="form-control custom-placeholder form-control-lg bg-dark text-white" placeholder="Height (CM)">
+                                        <p id="heightNoti">Please enter your weight.</p>
                                     </div>
                                 </div>
                                 <div class="form-row">
-                                    <div class="col form-group">
-                                        <input type="text" class="form-control form-control-lg bg-dark text-white"
-                                            placeholder="Age">
+                                    <div class="col form-group my-2">
+                                        <input type="number" class="form-control custom-placeholder form-control-lg bg-dark text-white" placeholder="Age">
                                     </div>
-                                    <div class="col form-group">
-                                        <select class="custom-select custom-select-lg bg-dark text-white rounded-2">
+                                    <div class="col form-group mb-3">
+                                        <select class="custom-select custom-select-lg bg-dark text-white rounded-2 border-light">
                                             <option class="GenderOption">Gender</option>
                                             <option value="1">Male</option>
                                             <option value="2">Female</option>
@@ -59,8 +59,9 @@
                                 </div>
                                 <div class="form-row">
                                     <div class="col">
-                                        <input type="button" class="btn btn-lg btn-block btn-dark border-light"
-                                            value="Calculate Now">
+                                        <button type ="button" onclick="bmicalculate()" class="btn btn-lg btn-block btn-dark border-light">
+                                            Calculate Now
+                                        </button>
                                     </div>
                                 </div>
                             </form>
@@ -69,6 +70,7 @@
                 </div>
             </div>
         </div>
+        <script src ="js/bmicalculate.js"></script>
         <!-- BMI Calculation End -->    
 </body>
 </html>    

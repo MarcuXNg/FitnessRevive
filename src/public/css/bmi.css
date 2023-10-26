@@ -1,3 +1,20 @@
 .GenderOption {
     display: none;
 }
+
+input.custom-placeholder::placeholder {
+    color: red;
+    opacity: 1; /* Độ mờ nhạt của placeholder */
+}
+
+#weightNoti {
+    display: none;
+    color: red; 
+    font-weight: bold 5px;
+}
+
+#heightNoti {
+    display: none;
+    color: red; 
+    font-weight: bold 5px;
+}
