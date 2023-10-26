@@ -18,3 +18,9 @@ input.custom-placeholder::placeholder {
     color: red; 
     font-weight: bold 5px;
 }
+
+#ageNoti {
+    display: none;
+    color: red; 
+    font-weight: bold 5px;
+}
