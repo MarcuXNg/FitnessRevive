@@ -24,10 +24,11 @@
                 <div class="row px-3 align-items-center">
                     <div class="col-md-6">
                         <div class="pr-md-3 d-none d-md-block">
-                            <h4 id="heading4" class="text-primary">Body Mass Index </h4>
-                            <h4 class="display-4 text-black font-weight-bold mb-4">What is BMI?</h4>
-                            <p class="m-0 text-black">The body mass index (BMI) is a measure that uses your height and weight to work out </p>
-                            <p class="m-0 text-black">if your weight is healthy. The BMI calculation divides an adult's weight in kilograms by their height in metres squared.</p>
+                            <h1 id="heading1" class="text-primary">Body Mass Index </h1>
+                            <h2 id="heading2" class="display-4 text-black font-weight-bold mb-4">What is BMI?</h2>
+                            <p id="p1" class="m-0 text-black">The body mass index (BMI) is a measure that uses your height and weight to work out </p>
+                            <p id="p2" class="m-0 text-black">if your weight is healthy. The BMI calculation divides an adult's weight in kilograms by their height in metres squared.</p>
+                            <button id="read-more" type="button" onclick="readmore()">Read More</button>
                         </div>
                     </div>
                     <div class="col-md-6 bg-secondary py-5 rounded-3">
@@ -69,10 +70,40 @@
                             </form>
                         </div>
                     </div>
+            <div id="readmore" class="pt-5">
+                <p>
+                    Once you have your BMI number, use the chart below to determine if you need to gain weight, maintain your weight, or lose weight.
+                </p>
+                <table class="custom-table table-bordered">
+                    <tbody>
+                        <tr>
+                            <th width="221">BMI</th>
+                            <th width="221">Weight Status</th>
+                        </tr>
+                        <tr>
+                            <td width="221">Below 18.5</td>
+                            <td width="221">Underweight</td>
+                        </tr>
+                        <tr>
+                            <td width="221">18.5 – 24.9</td>
+                            <td width="221">Normal or Healthy Weight</td>
+                        </tr>
+                        <tr>
+                            <td width="221">25.0 – 29.9</td>
+                            <td width="221">Overweight</td>
+                        </tr>
+                        <tr>
+                            <td width="221">30.0 and above</td>
+                            <td width="221">Obese</td>
+                        </tr>
+                        </tbody>
+                </table>
                 </div>
             </div>
         </div>
+        
         <script src ="js/bmicalculate.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <!-- BMI Calculation End -->    
 </body>
 </html>    

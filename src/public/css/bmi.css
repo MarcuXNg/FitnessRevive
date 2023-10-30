@@ -24,3 +24,38 @@ input.custom-placeholder::placeholder {
     color: red; 
     font-weight: bold 5px;
 }
+
+#genderNoti {
+    display: none;
+    color: red; 
+    font-weight: bold 5px;
+}
+
+#read-more {
+    display: none;
+    background-color: transparent;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+#readmore {
+    display: none;
+}
+
+table {
+    border-collapse: collapse;
+    /* width: 100%; */
+    border: 1px solid #e2e2e2;
+}
+
+td {
+    padding: 8px;
+}
+
+th {
+    background-color: #007acc;
+    color: white; /*text color*/
+    font-weight: 500;
+    padding: 8px;
+}

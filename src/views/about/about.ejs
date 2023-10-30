@@ -5,23 +5,22 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>About</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
     <link rel='stylesheet' type='text/css' media='screen'>
 </head>
 <body>
   <header>
     <%- include('../header/header.ejs'); %>
   </header>
-    
-    <!-- <div id="header"></div> -->
   
     
     <h1>About us</h1>
-    <!-- <script>
-        // Use jQuery to load and insert header.html
-        $(document).ready(function () {
-          $('#header').load('./src/views/header/header.ejs');
-        });
-      </script> -->
+    <h1>Nutrition Data</h1>
+    <div id="nutrition-data">
+        <!-- Data will be displayed here -->
+    </div>
+    <script type="module" src="js/test.js"></script>
+    <!--axios library include-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>
 </html>
