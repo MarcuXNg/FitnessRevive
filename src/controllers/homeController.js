@@ -22,6 +22,10 @@ const getBMI = (req, res) => {
   res.status(200).render(path.resolve('./src/views/functions/bmi', 'bmi.ejs')); // render bmi.ejs in views/services/bmi
 };
 
+const getCalories = (req, res) => {
+  res.status(200).render(path.resolve('./src/views/functions/calories', 'calories.ejs')); // render bmi.ejs in views/services/bmi
+};
+
 const get404 = (req, res) => {
   res.status(404).render(path.resolve('./src/views/404', '404.ejs')); // render 404.ejs in views/404
 };
@@ -33,4 +37,5 @@ module.exports = {
   get404,
   getRegister,
   getBMI,
+  getCalories,
 };

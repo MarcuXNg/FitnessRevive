@@ -9,6 +9,7 @@ async function bmicalculate() {
   const heightNoti = document.getElementById('heightNoti');
   const ageNoti = document.getElementById('ageNoti');
 
+  const caution = document.getElementById('p3');
   const readmore = document.getElementById('read-more');
 
   const readmoredata = document.getElementById('readmore');
@@ -18,6 +19,7 @@ async function bmicalculate() {
   heightNoti.style.display = 'none';
   ageNoti.style.display = 'none';
 
+  caution.style.display = 'none';
   readmore.style.display = 'none';
 
   // Condition
@@ -69,9 +71,10 @@ async function bmicalculate() {
       // exerciseDataElement.textContent = JSON.stringify(response.data, null, 2);
       // console.log(response.data);
 
+      caution.style.display = 'block';
       readmore.style.display = 'block';
       readmoredata.style.display ='none';
-      readmore.style.textContent ='Read more'
+      readmore.style.textContent ='Read more';
     } catch (error) {
       console.log(error);
     }

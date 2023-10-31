@@ -39,6 +39,11 @@ input.custom-placeholder::placeholder {
     padding: 10px 15px;
     cursor: pointer;
 }
+
+#p3 {
+    display: none;
+}
+
 #readmore {
     display: none;
 }
