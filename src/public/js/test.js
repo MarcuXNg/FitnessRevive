@@ -11,7 +11,7 @@ const options = {
 try {
   const response = await axios.request(options);
   const exerciseDataElement = document.getElementById('nutrition-data');
-  exerciseDataElement.textContent = JSON.stringify(response.data[0], null, 2);
+  exerciseDataElement.textContent = JSON.stringify(response.data, null, 2);
   console.log(response.data);
 } catch (error) {
   console.log(error);

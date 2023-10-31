@@ -1,5 +1,7 @@
-const path = require('path');
-const express = require('express');
+// const path = require('path');
+// const express = require('express');
+import path from 'path';
+import express from 'express';
 
 const configViewEngine = (app) => {
   // app.use(express.static(path.join(__dirname, 'views')));
