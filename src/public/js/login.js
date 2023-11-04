@@ -9,3 +9,9 @@ registerBtn.addEventListener('click', () => {
 loginBtn.addEventListener('click', () => {
   container.classList.remove('active');
 });
+
+
+function checkPasswordLength() {
+  const minLength = 8; // Define the minimum password length
+  const maxLength = 25; // Define the maximum password length
+}

@@ -75,7 +75,7 @@ body{
 }
 
 /* input */
-#Username, #singupEmail, #signupPassword, #confirmPassword, #loginName, #loginPassword {
+#SignUpUsername, #loginName, #loginPassword {
     background-color: #eee;
     margin: 8px 0;
     padding: 10px 15px;
@@ -85,12 +85,23 @@ body{
     outline: none;
 }
 
+
+#SignUpEmail, #validationForEmail, #signupPassword, #PasswordSignUp, #confirmPassword, #ConfirmPasswordSignUp {
+    background-color: #eee;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    outline: none;
+}
+
 #loginCheck, #agreeCheck {
     border: 1px solid #ccc; /*checkbox border*/
+    border-radius: 3px;
 }
 
 label {
     font-size: 13px;
+    color: #212529;  
 }
 
 .form-container{
