@@ -1,7 +1,7 @@
 const options = {
   method: 'GET',
   url: 'https://exercises-by-api-ninjas.p.rapidapi.com/v1/exercises',
-  // params: {muscle: 'biceps'},
+  params: {muscle: 'biceps'},
   headers: {
     'X-RapidAPI-Key': '901060d89fmsha223b879571e886p177850jsn48cdc00b964e',
     'X-RapidAPI-Host': 'exercises-by-api-ninjas.p.rapidapi.com',

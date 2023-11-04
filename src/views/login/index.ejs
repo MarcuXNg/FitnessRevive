@@ -3,56 +3,139 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <link rel="stylesheet" type="text/css" href="css/login.css" media='screen'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
+    <!-- boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/login.css">
     <title>Login</title>
 </head>
 
-<body>
-    <div>
-        <!-- <div id="menu">
-            <section id="menuitems">
-              <div class="menubutton">
-                <h1 onclick="menuToggle('hide')" class="menubutton">&#9776;</h1> -->
-        <div>
-            <h1>Login</h1>
-        </div>
-        <div>
-            <form class='login' action="#" method="post">
-                <div>
-                    <div>
-                        <input type="text" name="username" id="username" placeholder='Username' autofocus="1">
-                    </div>
-                    <div class="password-container">
-                        <input type="password" name="password" id="password" placeholder='Password' autofocus="1">
-                        <a href="#" role="button"></a>
-                        <i class="fa-solid fa-eye" id="show-password"></i>
-                    </div>
-                    <p><a href="/">
-                        Log in
-                    </p></a>
-                    <div>
-                        <a href="/login/passwordrecovery">Forgotten password?</a>
-                    </div>
+<body class="d-flex justify-content-center flex-column align-items-center">
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1 class="h3 fw-bold">Create Account</h1>
+                <!-- <div class="mt-4">
+                    <button type="button" class="btn btn-link btn-floating mx-1" id="fbsignup">
+                        <a class="fab fa-facebook-f"></a>
+                    </button>
+                    <button type="button" class="btn btn-link btn-floating mx-1" id="googlesignup">
+                        <i class="fab fa-google"></i>
+                    </button>
 
+                    <button type="button" class="btn btn-link btn-floating mx-1" id="twittersignup">
+                        <i class="fab fa-twitter"></i>
+                    </button>
+
+                    <button type="button" class="btn btn-link btn-floating mx-1 " id="githubsignup">
+                        <i class="fab fa-github"></i>
+                    </button>
+                </div> -->
+                <span>or use your Email for registeration</span>
+
+                <!-- Name input -->
+                <input type="name" id="Username" placeholder="Name" class="form-control border border-0" required="">
+                
+                <!-- Email input -->
+                <input type="email" id="singupEmail" placeholder="Email" class="form-control border border-0" required="">
+                
+                <!-- Password input -->
+                <input type="password" id="signupPassword" placeholder="Password" class="form-control border border-0" required="">
+                
+                <!-- Confirm Password input -->
+                <input type="password" id="confirmPassword" placeholder="Confirm Password" class="form-control border border-0" required=""/>
+
+                <!-- Confirm Agree to the terms -->
+                <div class="form-outline mb-3 text-center">
+                    <input class="form-check-input" type="checkbox" value="" id="agreeCheck" unchecked />
+                    <label class="form-check-label" for="agreeCheck">I have read and agree to the terms
+                    </label>
                 </div>
-                <form>
-                    <p><a href="/register">
-                        Create a new account     
-                    </p></a>
-                </form>
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary btn-block" id="SignUp">SIGN UP</button>
             </form>
         </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1 class="h3 fw-bold">Sign In</h1>
+                <div class="social-icons">
+                    
+            
+                </div>
+                <span>or</span>
+                <input type="email" id="loginName" placeholder="Email" class="form-control border border-0" required="">
+                <input type="password" id="loginPassword" placeholder="Password"  class="form-control border border-0" required="">
+                <div class="text-center mb-2">
+                    <!-- Remember me Checkbox -->
+                    <input class="form-check-input" type="checkbox" value="" id="loginCheck" unchecked />
+                    <label class="form-check-label" for="loginCheck">Remember me</label>            
+                    <br>
+                    <!-- Forget your password -->
+                    <a class="text-decoration-none" href="#">Forget Your Password?</a>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-block" id="SignIn">SIGN IN</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1 class="h3 fw-bold">Welcome Back!</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1 class="h3 fw-bold">Hello, Friend!</h1>
+                    <p>Register with your personal details to use all of site features</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
     </div>
+
+            <!-- <div>
+                        <h1>Login</h1>
+                    </div>
+                    <form class='login' action="#" method="post">
+                        <div>
+                            <div>
+                                <input type="text" name="username" id="username" placeholder='Username' autofocus="1">
+                            </div>
+                            <div class="password-container">
+                                <input type="password" name="password" id="password" placeholder='Password'
+                                    autofocus="1">
+                                <a href="#" role="button"></a>
+                                <i class="fa-solid fa-eye" id="show-password"></i>
+                            </div>
+                            <p><a href="/">
+                                    Log in
+                            </p></a>
+                            <div>
+                                <a href="/login/passwordrecovery">Forgotten password?</a>
+                            </div>
+
+                        </div>
+                        <form>
+                            <p><a href="/register">
+                                    Create a new account
+                            </p></a>
+                        </form>
+                    </form> -->
+    
     <!-- Toggle Password Function -->
     <script src="js/showpassword.js"></script>
-    <script>
-        document.getElementById("createAccountButton").addEventListener("click", function() {
+    <!-- Toggle sign in/sign up -->
+    <script src="js/login.js"></script>
+    <!-- <script>
+        document.getElementById("createAccountButton").addEventListener("click", function () {
             window.location.href = "./register";
         });
-    </script>
+    </script> -->
 </body>
 
 </html>
