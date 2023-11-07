@@ -24,32 +24,32 @@
         <!-- SIGNUP -->
         <div class="form-container sign-up">
             <!--form with validation-->
-            <form class="needs-validation" novalidate>
+            <form class="needs-validation" novalidate>        
                 <h1 class="h3 fw-bold">Create Account</h1>
-                <!-- <div class="mt-4">
-                    <button type="button" class="btn btn-link btn-floating mx-1" id="fbsignup">
-                        <a class="fab fa-facebook-f"></a>
-                    </button>
-                    <button type="button" class="btn btn-link btn-floating mx-1" id="googlesignup">
-                        <i class="fab fa-google"></i>
-                    </button>
 
-                    <button type="button" class="btn btn-link btn-floating mx-1" id="twittersignup">
-                        <i class="fab fa-twitter"></i>
-                    </button>
+                <div class="social-icons">
+                        <a href="#" class="justify-content-center align-items-center d-inline-flex icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="justify-content-center align-items-center d-inline-flex icon"><i class="fab fa-google"></i></a>
+                        <a href="#" class="justify-content-center align-items-center d-inline-flex icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="justify-content-center align-items-center d-inline-flex icon"><i class="fab fa-github"></i></a>
+                </div>
 
-                    <button type="button" class="btn btn-link btn-floating mx-1 " id="githubsignup">
-                        <i class="fab fa-github"></i>
-                    </button>
-                </div> -->
                 <span>or use your Email for registeration</span>
 
-                <!-- Name input -->
+                <!-- made it with input-group class so span and input can be in the same line on boostrap -->
+                <!-- First Name input -->
                 <div class="input-group has-validation">
-                    <input type="name" placeholder="Name" class="form-control border border-0" id="SignUpUsername"
+                    <input type="name" placeholder="First Name" class="form-control border border-0" id="Firstname"
                         required />
                     <!-- Validation -->
-                    <div class="invalid-tooltip">Please choose a username.</div>
+                    <div class="invalid-tooltip" id="firstname-alert">What is your first name?</div>
+                </div>
+                <!-- Last Name input -->
+                <div class="input-group has-validation">
+                    <input type="name" placeholder="Last Name" class="form-control border border-0" id="Lastname"
+                        required />
+                    <!-- Validation -->
+                    <div class="invalid-tooltip" id="lastname-alert">What is your last name?</div>
                 </div>
 
                 <!-- Email input -->
@@ -59,39 +59,56 @@
                     <input type="email" id="SignUpEmail" placeholder="Email" class="form-control border border-0"
                         aria-describedby="validationForEmail" required />
                     <!-- Validation -->
-                    <div class="invalid-tooltip">
-                        Please choose a unique and valid gmail.
+                    <div class="invalid-tooltip" id="gmail-alert">
+                        Please choose a unique and valid gmail. You'll use this when you log in and if you ever need to
+                        reset your password.
                     </div>
                 </div>
 
                 <!-- Password input -->
                 <div class="input-group has-validation">
-                    <input type="password" id="signupPassword" placeholder="Password"
+                    <input type="password" id="signupPassword" placeholder="New Password"
                         class="form-control border border-0" aria-describedby="PasswordSignUp" required />
                     <span class="input-group-text border border-0" id="PasswordSignUp">
                         <i class="fa-solid fa-eye" id="show-password"></i>
                     </span>
 
                     <!-- Validation -->
-                    <div class="invalid-tooltip">
-                        Please fill in your password.
+                    <div class="invalid-tooltip d-none" id="password-alert">
+                        <ul class="list-unstyled mb-0">
+                            <li class="leng" id="leng">
+                                Your password must have at least 8 chars
+                            </li>
+                            <li class="capital is-invalid" id="capital">
+                                Your password must have at least 1 capital letter.
+                            </li>
+                            <li class="number" id="number">
+                                Your password must have at least 1 number.
+                            </li>
+                            <li class="special-char" id="special-char">
+                                Your password must have at least 1 special char.
+                            </li>
+                            <li class="lowercase" id="lowercase">
+                                Your password must have at least 1 lowercase letter.
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
                 <!-- Confirm Password input -->
                 <div class="input-group has-validation">
                     <input type="password" id="confirmPassword" placeholder="Confirm Password"
-                    class="form-control border border-0" aria-describedby="ConfirmPasswordSignUp" required />
+                        class="form-control border border-0" aria-describedby="ConfirmPasswordSignUp" required />
                     <span class="input-group-text border border-0" id="ConfirmPasswordSignUp">
                         <i class="fa-solid fa-eye" id="show-confirmpassword"></i>
                     </span>
 
                     <!-- Validation -->
-                    <div class="invalid-tooltip">
-                        Please fill in your password.
+                    <div class="invalid-tooltip d-none" id="passwordMatch">
+                        Password not matching.
                     </div>
                 </div>
-               
+
 
                 <!-- Confirm Agree to the terms -->
                 <div class="form-outline mb-3 text-center justify-content-center">
@@ -118,7 +135,14 @@
         <div class="form-container sign-in">
             <form>
                 <h1 class="h3 fw-bold">Sign In</h1>
-                <div class="social-icons"></div>
+                
+                <div class="social-icons">
+                    <a href="#" class="justify-content-center align-items-center d-inline-flex icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="justify-content-center align-items-center d-inline-flex icon"><i class="fab fa-google"></i></a>
+                    <a href="#" class="justify-content-center align-items-center d-inline-flex icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="justify-content-center align-items-center d-inline-flex icon"><i class="fab fa-github"></i></a>
+                </div>
+
                 <span>or</span>
                 <input type="email" id="loginName" placeholder="Email" class="form-control border border-0"
                     required="" />

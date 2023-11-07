@@ -75,7 +75,7 @@ body{
 }
 
 /* input */
-#SignUpUsername, #loginName, #loginPassword {
+#Firstname, #Lastname, #loginName, #loginPassword {
     background-color: #eee;
     margin: 8px 0;
     padding: 10px 15px;
@@ -84,7 +84,6 @@ body{
     width: 100%;
     outline: none;
 }
-
 
 #SignUpEmail, #validationForEmail, #signupPassword, #PasswordSignUp, #confirmPassword, #ConfirmPasswordSignUp {
     background-color: #eee;
@@ -98,6 +97,10 @@ body{
     border: 1px solid #ccc; /*checkbox border*/
     border-radius: 3px;
 }
+
+/* #password-alert {
+    background-color: #ccc;
+} */
 
 label {
     font-size: 13px;
@@ -153,9 +156,6 @@ label {
 .social-icons a{
     border: 1px solid #ccc;
     border-radius: 20%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
     margin: 0 3px;
     width: 40px;
     height: 40px;
