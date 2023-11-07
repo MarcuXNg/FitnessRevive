@@ -42,14 +42,14 @@
                     <input type="name" placeholder="First Name" class="form-control border border-0" id="Firstname"
                         required />
                     <!-- Validation -->
-                    <div class="invalid-tooltip" id="firstname-alert">What is your first name?</div>
+                    <div class="invalid-tooltip d-none" id="firstname-alert">What is your first name?</div>
                 </div>
                 <!-- Last Name input -->
                 <div class="input-group has-validation">
                     <input type="name" placeholder="Last Name" class="form-control border border-0" id="Lastname"
                         required />
                     <!-- Validation -->
-                    <div class="invalid-tooltip" id="lastname-alert">What is your last name?</div>
+                    <div class="invalid-tooltip d-none" id="lastname-alert">What is your last name?</div>
                 </div>
 
                 <!-- Email input -->
@@ -59,7 +59,7 @@
                     <input type="email" id="SignUpEmail" placeholder="Email" class="form-control border border-0"
                         aria-describedby="validationForEmail" required />
                     <!-- Validation -->
-                    <div class="invalid-tooltip" id="gmail-alert">
+                    <div class="invalid-tooltip d-none" id="gmail-alert">
                         Please choose a unique and valid gmail. You'll use this when you log in and if you ever need to
                         reset your password.
                     </div>
@@ -76,20 +76,8 @@
                     <!-- Validation -->
                     <div class="invalid-tooltip d-none" id="password-alert">
                         <ul class="list-unstyled mb-0">
-                            <li class="leng" id="leng">
-                                Your password must have at least 8 chars
-                            </li>
-                            <li class="capital is-invalid" id="capital">
-                                Your password must have at least 1 capital letter.
-                            </li>
-                            <li class="number" id="number">
-                                Your password must have at least 1 number.
-                            </li>
-                            <li class="special-char" id="special-char">
-                                Your password must have at least 1 special char.
-                            </li>
-                            <li class="lowercase" id="lowercase">
-                                Your password must have at least 1 lowercase letter.
+                            <li class="pass-requirements" id="pass-requirements">
+                                Your password must have 8-25 characters with at least 1 capital letter, 1 number, 1 special characters, 1 lowercase letter.
                             </li>
                         </ul>
                     </div>
