@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const {getHomepage, getAbout, getLogin, get404, getRegister, getBMI, getCalories} = require('../controllers/homeController');
+const {getHomepage, getAbout, getLogin, get404, getRegister, getBMI, getCalories, getAdmin, getUser} = require('../controllers/homeController');
 
 // router.Method('/route', handler);
 
@@ -21,6 +21,11 @@ router.get('/bmi', getBMI);
 
 // Calories
 router.get('/calories', getCalories);
+
+// Admin
+router.get('/admin', getAdmin);
+
+router.get('/user', getUser);
 
 // Display 404 PAGE NOT FOUND IF THE DOMAIN IS NOT EXIST WHEN THE USER ACCESS NONEXISTENT PAGE LINK
 router.get('*', get404);

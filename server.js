@@ -11,7 +11,6 @@ const port = process.env.port || 3000; // port
 const configViewEngine = require('./src/config/viewEngine');
 const webRoutes = require('./src/routes/web');
 
-
 // config template engine
 configViewEngine(app);
 

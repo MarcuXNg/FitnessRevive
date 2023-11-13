@@ -24,7 +24,7 @@
         <!-- SIGNUP -->
         <div class="form-container sign-up">
             <!--form with validation-->
-            <form class="needs-validation" novalidate>        
+            <form class="needs-validation" novalidate method="post" action="http://localhost:8080/api/tutorials">        
                 <h1 class="h3 fw-bold">Create Account</h1>
 
                 <div class="social-icons">
@@ -39,14 +39,14 @@
                 <!-- made it with input-group class so span and input can be in the same line on boostrap -->
                 <!-- First Name input -->
                 <div class="input-group has-validation">
-                    <input type="name" placeholder="First Name" class="form-control border border-0" id="Firstname"
+                    <input name="firstname" type="name" placeholder="First Name" class="form-control border border-0" id="Firstname"
                         required />
                     <!-- Validation -->
                     <div class="invalid-tooltip d-none" id="firstname-alert">What is your first name?</div>
                 </div>
                 <!-- Last Name input -->
                 <div class="input-group has-validation">
-                    <input type="name" placeholder="Last Name" class="form-control border border-0" id="Lastname"
+                    <input name="lastname" type="name" placeholder="Last Name" class="form-control border border-0" id="Lastname"
                         required />
                     <!-- Validation -->
                     <div class="invalid-tooltip d-none" id="lastname-alert">What is your last name?</div>
@@ -56,7 +56,7 @@
                 <div class="input-group has-validation">
                     <span class="input-group-text border border-end border-start-0 border-top-0 border-bottom-0"
                         id="validationForEmail">@</span>
-                    <input type="email" id="SignUpEmail" placeholder="Email" class="form-control border border-0"
+                    <input name="email" type="email" id="SignUpEmail" placeholder="Email" class="form-control border border-0"
                         aria-describedby="validationForEmail" required />
                     <!-- Validation -->
                     <div class="invalid-tooltip d-none" id="gmail-alert">
@@ -67,7 +67,7 @@
 
                 <!-- Password input -->
                 <div class="input-group has-validation">
-                    <input type="password" id="signupPassword" placeholder="New Password"
+                    <input name="password" type="password" id="signupPassword" placeholder="New Password"
                         class="form-control border border-0" aria-describedby="PasswordSignUp" required />
                     <span class="input-group-text border border-0" id="PasswordSignUp">
                         <i class="fa-solid fa-eye" id="show-password"></i>
@@ -121,7 +121,7 @@
         </div>
         <!-- SIGNIN -->
         <div class="form-container sign-in">
-            <form>
+            <form method="post" action="http://localhost:8080/api/tutorials">
                 <h1 class="h3 fw-bold">Sign In</h1>
                 
                 <div class="social-icons">
@@ -132,9 +132,9 @@
                 </div>
 
                 <span>or</span>
-                <input type="email" id="loginName" placeholder="Email" class="form-control border border-0"
+                <input name="email" type="email" id="loginName" placeholder="Email" class="form-control border border-0"
                     required="" />
-                <input type="password" id="loginPassword" placeholder="Password" class="form-control border border-0"
+                <input name="password" type="password" id="loginPassword" placeholder="Password" class="form-control border border-0"
                     required="" />
                 <div class="text-center mb-2">
                     <!-- Remember me Checkbox -->
